@@ -8,7 +8,7 @@ This repository contains scripts for managing device configurations via the Micr
 This script interacts with the Microsoft Graph API to list, download, and decode device management scripts in an Intune environment. It prompts the user for an access token, retrieves the scripts' IDs and display names, sanitizes the filenames, and saves the decoded scripts as `.ps1` files. Additionally, it creates a CSV file containing the display names and script IDs.
 
 ### Usage:
-1. Ensure you have the necessary permissions and an access token for the Microsoft Graph API. 
+1. Ensure you have the necessary permissions and an access token for the Microsoft Graph API. Like so: https://i.imgur.com/a1kgNKi.png
 	#### DeviceManagementConfiguration.ReadWrite.All
 	#### DeviceManagementManagedDevices.ReadWrite.All
 	#### DeviceManagementApps.ReadWrite.All
