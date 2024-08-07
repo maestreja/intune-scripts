@@ -2,10 +2,12 @@ import requests
 import json
 import base64
 import re
+import csv
 
 # Summary:
 # This script interacts with the Microsoft Graph API to list, download, and decode device management scripts in an Intune environment.
 # It prompts the user for an access token, retrieves the scripts' IDs and display names, sanitizes the filenames, and saves the decoded scripts as .ps1 files.
+# Additionally, it creates a CSV file containing the display names and script IDs.
 
 # Prompt user to input the access token
 access_token = input("Please enter your access token: ")
@@ -59,8 +61,15 @@ def download_device_management_script(script):
 # Get the list of device management script IDs and display names
 scripts = get_device_management_scripts()
 
-# Iterate through the list of scripts and download each one
-for script in scripts:
-    download_device_management_script(script)
+# Create a CSV file containing the display names and script IDs
+with open('device_management_scripts.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    fieldnames = ['Display Name', 'Script ID']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-print("Download completed.")
+    writer.writeheader()
+    for script in scripts:
+        writer.writerow({'Display Name': script['displayName'], 'Script ID': script['id']})
+        # Download each script
+        download_device_management_script(script)
+
+print("Download and CSV creation completed.")
