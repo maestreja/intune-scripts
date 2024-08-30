@@ -1,6 +1,6 @@
 # Intune Scripts Repository
 
-Welcome to the Intune Scripts Repository! This repository contains various PowerShell or Python scripts and related resources to help automate and manage tasks in Microsoft Intune.
+Welcome to the Intune Scripts Repository! This repository contains various PowerShell or Python scripts and related resources to help automate and manage tasks in Microsoft Intune. It has placeholders for future scripts as well.
 
 ## Table of Contents
 
