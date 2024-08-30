@@ -32,3 +32,5 @@ pip install requests
 ```sh
 python download_device_management_scripts.py
 ```
+
+Enjoy!
