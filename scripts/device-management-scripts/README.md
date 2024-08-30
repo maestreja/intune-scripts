@@ -1,7 +1,3 @@
-# Intune Device Management Scripts
-
-This repository contains scripts for managing device configurations via the Microsoft Graph API in an Intune environment.
-
 ## download_device_management_scripts.py
 
 ### Summary:
