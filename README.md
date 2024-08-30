@@ -1,6 +1,6 @@
 # Intune Scripts Repository
 
-Welcome to the Intune Scripts Repository! This repository contains various PowerShell or Python scripts and related resources to help automate and manage tasks in Microsoft Intune. It has placeholders for future scripts as well.
+Welcome to the Intune Scripts Repository! This repository contains various PowerShell and Python scripts and related resources to help automate and manage tasks in Microsoft Intune. It has placeholders for future scripts as well.
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ To use any of the scripts in this repository, follow these steps:
 1. **Clone the Repository**:
 2. 
     ```bash
-    git clone https://github.com/maestreja/IntuneScripts.git
+    git clone https://github.com/maestreja/intune-scripts.git
     cd IntuneScripts
     ```
 
@@ -74,7 +74,7 @@ This repository includes the following script categories:
 
 - **[Device Management Scripts](scripts/device-management-scripts/README.md)**: Scripts related to managing devices in Intune.
 
-- **[Another Script Group](scripts/another-script-group/README.md)**: Other Intune-related scripts.
+- **[Another Script Group](scripts/another-script-group/README.md)**: Placeholder for Other future  Intune-related scripts.
 
 For detailed information about each script, please refer to the individual README files within the respective script folders.
 
