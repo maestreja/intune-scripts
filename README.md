@@ -74,7 +74,7 @@ This repository includes the following script categories:
 
 - **[Device Management Scripts](scripts/device-management-scripts/README.md)**: Scripts related to managing devices in Intune.
 
-- **[Another Script Group](scripts/another-script-group/README.md)**: Placeholder for Other future  Intune-related scripts.
+- **[Remediations](scripts/remediations/RemediateDriveAndEnvVars/README.MD)**: Scripts for inutune Remediations.
 
 For detailed information about each script, please refer to the individual README files within the respective script folders.
 
