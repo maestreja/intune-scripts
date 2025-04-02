@@ -6,7 +6,7 @@
     have the expected values. If the drive is not mapped, it maps the drive to the provided UNC path.
     If an environment variable does not have the desired value, it is updated.
 .PARAMETER DriveLetter
-    The drive letter to check (e.g., "R"). Do not include the colon.
+    The drive letter to check (e.g., "Z"). Do not include the colon.
 .PARAMETER DrivePath
     The UNC path to map the drive to (e.g., "\\server\share").
 .PARAMETER EnvVar1Name
@@ -18,7 +18,7 @@
 .PARAMETER EnvVar2Value
     The desired value for the second environment variable.
 .EXAMPLE
-    .\RemediationScript.ps1 -DriveLetter R -DrivePath "\\server\share" -EnvVar1Name "TSDRIVE" -EnvVar1Value "R" -EnvVar2Name "NCI_CITRIX_SRV" -EnvVar2Value "YES"
+    .\RemediationScript.ps1 -DriveLetter Z -DrivePath "\\server\share" -EnvVar1Name "SOMEDRIVE" -EnvVar1Value "P" -EnvVar2Name "PowerBI_root" -EnvVar2Value "YES"
 #>
 param(
     [Parameter(Mandatory=$true)]
@@ -40,7 +40,7 @@ param(
     [string]$EnvVar2Value
 )
 
-# Construct the drive path string (e.g., "R:\")
+# Construct the drive path string (e.g., "Z:\")
 $mappedDrive = "${DriveLetter}:\"
 
 # Check and remediate drive mapping

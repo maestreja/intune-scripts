@@ -39,4 +39,4 @@ Run the detection script with the following parameters:
 
 Example:
 ```powershell
-.\DetectionScript.ps1 -DriveLetter R -EnvVar1Name "SOMEDRIVE" -EnvVar1Value "P" -EnvVar2Name "PowerBI_root" -EnvVar2Value "YES"
+.\DetectionScript.ps1 -DriveLetter Z -EnvVar1Name "SOMEDRIVE" -EnvVar1Value "P" -EnvVar2Name "PowerBI_root" -EnvVar2Value "YES"

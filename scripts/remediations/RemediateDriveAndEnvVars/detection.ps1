@@ -6,7 +6,7 @@
     are set to the desired values. It outputs "Compliant" and exits with code 0 if all checks pass, otherwise it outputs
     "Non-compliant" and exits with code 1.
 .PARAMETER DriveLetter
-    The drive letter to check (e.g., "R"). Do not include the colon.
+    The drive letter to check (e.g., "Z"). Do not include the colon.
 .PARAMETER EnvVar1Name
     The name of the first environment variable.
 .PARAMETER EnvVar1Value
@@ -16,7 +16,7 @@
 .PARAMETER EnvVar2Value
     The expected value of the second environment variable.
 .EXAMPLE
-    .\DetectionScript.ps1 -DriveLetter R -EnvVar1Name "TSDRIVE" -EnvVar1Value "R" -EnvVar2Name "NCI_CITRIX_SRV" -EnvVar2Value "YES"
+    .\DetectionScript.ps1 -DriveLetter Z -EnvVar1Name "SOMEDRIVE" -EnvVar1Value "P" -EnvVar2Name "PowerBI_root" -EnvVar2Value "YES"
 #>
 param(
     [Parameter(Mandatory=$true)]
@@ -35,7 +35,7 @@ param(
     [string]$EnvVar2Value
 )
 
-# Construct the drive path string (e.g., "R:\")
+# Construct the drive path string (e.g., "Z:\")
 $drivePath = "${DriveLetter}:\"
 
 # Check if the drive is mapped
